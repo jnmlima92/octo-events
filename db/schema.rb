@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 20200912162404) do
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
-    t.jsonb    "description", null: false
-    t.jsonb    "issue_id",    null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.jsonb    "description",  null: false
+    t.jsonb    "issue_number"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end
